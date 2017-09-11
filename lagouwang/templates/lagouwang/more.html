@@ -1,0 +1,46 @@
+			{% extends "lagouwang/base.html" %}
+			{% block all %}
+			<div id="more_main">	
+
+				
+				<header id="more_header">
+					<div >
+						<i class="iconfont icon-lingdang"></i>
+					</div>
+					<div >
+						<img src="../../static/img/yz.png"/>
+					</div>
+					<div >
+						<i class="iconfont icon-weibiaoti-"></i>
+					</div>
+				</header>
+				<section id="more_seciton">
+					<div id="more_wifi">
+						<i class="iconfont icon-WiFi"></i>
+					</div>
+					<p>数据加载失败</p>
+					<b>请确保你的手机已经联网</b>
+					<div id="more_button">
+						<span id="">
+							重新加载
+						</span>
+					</div>
+				</section>
+				<footer>
+					<ul>
+						<li class="list"><a id="home" href="../index"><i class="iconfont icon-shouye"></i> <b>首页</b> </a></li>
+						<li class="list"><a id="mess" href="../mess"><i class="iconfont icon-xiaoxi"></i> <b>消息</b> </a></li>
+						<li class="list"><a id="more" href="#"><i class="iconfont icon-caidan"></i> <b>言职</b> </a></li>
+						<li class="list"><a id="me" href="../me"><i class="iconfont icon-xiaolian"></i> <b>我</b> </a></li>
+					</ul>
+				</footer>
+			</div>
+			<script type="text/javascript">
+				$(function(){
+					var dev_high = $(window).height();
+					$("#more_seciton").css("top",dev_high/14);
+					$("#more i").addClass("iplus");
+					$("#more b").css("color","#00b487");
+				})
+			</script>
+			{% endblock all %}

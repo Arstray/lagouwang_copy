@@ -1,0 +1,36 @@
+			{% extends "lagouwang/base.html" %}
+			{% block all %}
+			<header id="mess_header">
+				<div >
+					沟通
+				</div>
+				<div >
+					谁看过我
+				</div>
+				<div >
+					最新职位
+				</div>
+				<div id="mess_header_line">
+					
+				</div>
+			</header>
+			<section id="mess_seciton">
+				<p>与其苦苦等待，不如主动出击</p>
+			</section>
+			<footer>
+				<ul>
+					<li class="list"><a id="home" href="../index"><i class="iconfont icon-shouye"></i> <b>首页</b> </a></li>
+					<li class="list"><a id="mess" href="#"><i class="iconfont icon-xiaoxi"></i> <b>消息</b> </a></li>
+					<li class="list"><a id="more" href="../more"><i class="iconfont icon-caidan"></i> <b>言职</b> </a></li>
+					<li class="list"><a id="me" href="../me"><i class="iconfont icon-xiaolian"></i> <b>我</b> </a></li>
+				</ul>
+			</footer>
+			<script type="text/javascript">
+				$(function(){
+					var dev_high = $(window).height();
+					$("#mess_seciton").css("top",dev_high/14);
+					$("#mess i").addClass("iplus");
+					$("#mess b").css("color","#00b487");
+				})
+			</script>
+			{% endblock all %}

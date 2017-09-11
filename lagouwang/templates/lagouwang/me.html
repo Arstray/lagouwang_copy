@@ -1,0 +1,56 @@
+			{% extends "lagouwang/base.html" %}
+			{% block all %}
+			<div id="me_main">
+				<div id="me_header">
+					<div id="me_top">
+						<ul>
+							<li>炸鸡队</li>
+							<li>大吉大利，今晚吃鸡</li>					
+							<li><span><i class="iconfont icon-bi"></i> 编辑 </span></li>
+						</ul>
+	
+					
+						<div id="touxiang">
+							<img src="../../static/img/tx.jpg"/>
+						</div>
+					</div>
+					<div id="me_menu">
+						<ul>
+							<li><i class="iconfont icon-jianli"></i><p>简历</p></li>
+							<li><i class="iconfont icon-baozhuanghezi"></i><p>我的投递</p></li>
+							<li><i class="iconfont icon-xihuanicon"></i><p>关注公司</p></li>
+							<li><i class="iconfont icon-erji"></i><p>拉钩gogo</p></li>
+						</ul>
+					</div>
+				</div>
+				<div id="me_set">
+					<ul>
+						<li><i class="iconfont icon-shoucangdianjiwan"></i><p>收藏</p></li>
+						<li><i class="iconfont icon-yijian"></i><p>意见反馈</p></li>
+						<li><i class="iconfont icon-iconfontcolor26"></i><p>设置</p></li>
+					</ul>
+				</div>
+				<div id="me_security">
+					<ul>
+						<li><i class="iconfont icon-suo"></i><p>隐私设置</p></li>
+					</ul>
+				</div>
+			</div>
+			
+			<footer>
+				<ul>
+					<li class="list"><a id="home" href="../index"><i class="iconfont icon-shouye"></i> <b>首页</b> </a></li>
+					<li class="list"><a id="mess" href="../mess"><i class="iconfont icon-xiaoxi"></i> <b>消息</b> </a></li>
+					<li class="list"><a id="more" href="../more"><i class="iconfont icon-caidan"></i> <b>言职</b> </a></li>
+					<li class="list"><a id="me" href="#"><i class="iconfont icon-xiaolian"></i> <b>我</b> </a></li>
+				</ul>
+			</footer>
+			<script type="text/javascript">
+				$(function(){
+					var dev_high = $(window).height();
+					$("#me i").addClass("iplus");
+					$("#me b").css("color","#00b487");
+				})
+			</script>
+			{% endblock all %}
+
