@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 
+def flash(requset):
+    return render(requset, "lagouwang/flash.html")
 def index(requset):
     return render(requset, "lagouwang/index.html")
 def mess(requset):

@@ -12,7 +12,6 @@ a{
 	text-decoration: none;
 	color: black;
 }
-
 .fullscreen{
 	width: 100%;
 }
@@ -25,10 +24,25 @@ a{
 	text-align: right;
 }
 #main{
+
 	height: 100%;
 }
 /*动画*/
+@keyframes falldown{
+	from{z-index: 9999;}
+	to{z-index: -999;}
+}
+#flash{
+	animation: falldown 2s linear forwards;
+	background: url(../img/flash.jpg);
+	background-size: cover;
 
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+}
 
 
 /*头部元素*/
@@ -312,6 +326,7 @@ footer{
 
 /*mess页面添加元素*/
 #mess_header{
+	
 	display: flex;
 	flex-flow: row;
 	background: #eee;
@@ -334,6 +349,19 @@ footer{
 	height: 0.02rem;
 	width: 0.5rem;
 	background: mediumseagreen;
+}
+#mess_seciton{
+
+}
+#mess_seciton #doge{
+	
+	margin-top: 1rem;
+	width: 100%;
+	height: 2.4rem;
+	background: url(../img/doge.png);
+	background-position: center;
+	background-size: 50%;
+	background-repeat: no-repeat;
 }
 /*more页面添加元素*/
 #more_main{
@@ -371,7 +399,6 @@ footer{
 }
 
 #more_seciton #more_wifi{
-	
 	margin-top: 1rem;
 	display: flex;
 	flex-direction: column;
